@@ -1,7 +1,6 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -17,6 +16,15 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+  },
+  webpack(config) {
+    // Ignore handlebars which uses require.extensions (not supported by webpack)
+    config.module.rules.push({
+      test: /handlebars\.js$/,
+      use: 'null-loader',
+    });
+
+    return config;
   },
 };
 
