@@ -57,7 +57,7 @@ export function SiteHeader() {
         <div className="flex items-center justify-end space-x-2 ">
           <div className="hidden md:flex items-center space-x-2">
             <Button asChild variant="secondary" className="shadow">
-              <a href="https://wa.me/270123456789" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/27763351282" target="_blank" rel="noopener noreferrer">
                 <Phone className="h-4 w-4 mr-2" />
                 WhatsApp Us
               </a>

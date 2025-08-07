@@ -190,7 +190,7 @@ export default function Home() {
               <Link href="#contact">Book Free Quote <ArrowRight className="ml-2" /></Link>
             </Button>
             <Button asChild size="lg" variant="secondary" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-lg transition-transform transform hover:scale-105">
-              <a href="https://wa.me/0763351282" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/+27763351282" target="_blank" rel="noopener noreferrer">
                 <Phone className="ml-2" /> Chat on WhatsApp
               </a>
             </Button>
