@@ -3,7 +3,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { useSearchParams } from 'next/navigation'
+import { useSearchParams } from "next/navigation";
 import {
   Form,
   FormControl,
@@ -15,8 +15,19 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { submitInquiry } from "@/app/contact/actions";
 import { services } from "@/lib/placeholder-data";
@@ -30,8 +41,8 @@ const formSchema = z.object({
 });
 
 export function ContactForm() {
-  const searchParams = useSearchParams()
-  const serviceQuery = searchParams.get('service')
+  const searchParams = useSearchParams();
+  const serviceQuery = searchParams.get("service");
   const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -45,8 +56,10 @@ export function ContactForm() {
     },
   });
 
+  // ⬇️ Submit handler
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const result = await submitInquiry(values);
+
     if (result.success) {
       toast({
         title: "Message Sent!",
@@ -57,7 +70,7 @@ export function ContactForm() {
       toast({
         variant: "destructive",
         title: "Uh oh! Something went wrong.",
-        description: result.message,
+        description: result.message || "We couldn't send your message.",
       });
     }
   }
@@ -83,6 +96,7 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
+
             <FormField
               control={form.control}
               name="email"
@@ -96,7 +110,8 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
-             <FormField
+
+            <FormField
               control={form.control}
               name="phone"
               render={({ field }) => (
@@ -109,7 +124,8 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
-             <FormField
+
+            <FormField
               control={form.control}
               name="service"
               render={({ field }) => (
@@ -122,15 +138,20 @@ export function ContactForm() {
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      {services.map(s => <SelectItem key={s.title} value={s.title}>{s.title}</SelectItem>)}
-                       <SelectItem value="quote">Free Quote</SelectItem>
-                       <SelectItem value="other">Other</SelectItem>
+                      {services.map((s) => (
+                        <SelectItem key={s.title} value={s.title}>
+                          {s.title}
+                        </SelectItem>
+                      ))}
+                      <SelectItem value="quote">Free Quote</SelectItem>
+                      <SelectItem value="other">Other</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
                 </FormItem>
               )}
             />
+
             <FormField
               control={form.control}
               name="message"
@@ -148,6 +169,7 @@ export function ContactForm() {
                 </FormItem>
               )}
             />
+
             <Button type="submit" className="w-full" disabled={form.formState.isSubmitting}>
               {form.formState.isSubmitting ? "Sending..." : "Send Inquiry"}
             </Button>
