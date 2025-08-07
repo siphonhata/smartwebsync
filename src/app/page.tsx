@@ -48,7 +48,7 @@ import { ProjectCard } from "@/components/project-card";
 import { ContactForm } from "@/components/contact-form";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { projects, services } from "@/lib/placeholder-data";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { SiteFooter } from "@/components/site-footer";
 import BlogSection from "@/components/sections/BlogSection";
 
@@ -455,7 +455,9 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <ContactForm />
+              <Suspense fallback={<div>Loading form...</div>}>
+                <ContactForm />
+              </Suspense>
             </div>
           </div>
         </div>
