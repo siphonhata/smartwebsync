@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://smartwebsync.co.za
+
+# Sitemaps
+Sitemap: https://smartwebsync.co.za/sitemap.xml

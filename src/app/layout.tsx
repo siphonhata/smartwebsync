@@ -5,10 +5,27 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Toaster } from "@/components/ui/toaster";
 
-export const metadata: Metadata = {
-  title: "Smart WebSync Solutions | Innovate Brightly, Sync Smoothly",
-  description: "Innovate Brightly, Sync Smoothly",
+// app/layout.tsx
+export const metadata = {
+  title: 'SmartWebSync | Web & App Development in South Africa',
+  description:
+    'SmartWebSync offers professional web and app development services in South Africa. We build modern websites, apps, and digital solutions for your business.',
+  openGraph: {
+    title: 'SmartWebSync | Web & App Development',
+    description: 'SmartWebSync builds websites and apps for startups and businesses in South Africa.',
+    url: 'https://smartwebsync.co.za',
+    type: 'website',
+    images: [
+      {
+        url: 'https://via.placeholder.com/1200x630.png?text=SmartWebSync',
+        width: 1200,
+        height: 630,
+        alt: 'SmartWebSync Preview',
+      },
+    ],
+  },
 };
+
 
 export default function RootLayout({
   children,
