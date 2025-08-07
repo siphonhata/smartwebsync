@@ -50,7 +50,7 @@ export function ContactForm() {
     if (result.success) {
       toast({
         title: "Message Sent!",
-        description: "Thank you for your inquiry. I'll get back to you soon.",
+        description: "Thank you for your inquiry. We'll get back to you soon.",
       });
       form.reset();
     } else {
@@ -139,7 +139,7 @@ export function ContactForm() {
                   <FormLabel>Your Message</FormLabel>
                   <FormControl>
                     <Textarea
-                      placeholder="Tell me a little bit about your project..."
+                      placeholder="Tell us a little bit about your project..."
                       className="min-h-[120px]"
                       {...field}
                     />

@@ -26,7 +26,7 @@ export const services = [
       "User management & authentication",
       "API integrations and database design",
     ],
-    tech: ["Node.js", "PHP", "Java", "C# .Net", "Python","Supabase", "PostgreSQL", "Next.js", "TypeScript"],
+    tech: ["Node.js", "PHP", "Java", "C# .Net", "Python", "Supabase", "PostgreSQL", "Next.js", "TypeScript"],
     timeline: "3-8 Weeks",
   },
   {
@@ -72,86 +72,88 @@ export const services = [
     timeline: "Based on project scope",
   },
   {
-  title: "Reliable Hosting & Website Maintenance",
-  icon: Server,
-  description:
-    "Keep your website fast, secure, and always online with our managed hosting and maintenance services. We handle everything from server setup to ongoing updates and backups — so you can focus on your business.",
-  benefits: [
-    "High-performance SSD hosting with 99.9% uptime",
-    "Automatic backups and disaster recovery",
-    "Regular security patches and software updates",
-    "24/7 monitoring and support",
-    "Scalable solutions to grow with your business",
-  ],
-  tech: ["Vercel", "Netlify", "AWS", "DigitalOcean", "Cloudflare"],
-  timeline: "Ongoing Monthly Service",
-},
+    title: "Reliable Hosting & Website Maintenance",
+    icon: Server,
+    description:
+      "Keep your website fast, secure, and always online with our managed hosting and maintenance services. We handle everything from server setup to ongoing updates and backups — so you can focus on your business.",
+    benefits: [
+      "High-performance SSD hosting with 99.9% uptime",
+      "Automatic backups and disaster recovery",
+      "Regular security patches and software updates",
+      "24/7 monitoring and support",
+      "Scalable solutions to grow with your business",
+    ],
+    tech: ["Vercel", "Netlify", "AWS", "DigitalOcean", "Cloudflare"],
+    timeline: "Ongoing Monthly Service",
+  },
 ];
 
 export const projects = [
-  {
-    id: "1",
-    title: "E-commerce Platform for SA Artisans",
-    type: "web-app",
-    description: "A full-featured online marketplace for local South African artists to sell their crafts.",
-    image: "https://placehold.co/600x400",
-    data_ai_hint: "ecommerce website",
-    techStack: ["Next.js", "Firebase", "Stripe", "Tailwind CSS"],
-  },
+ 
   {
     id: "2",
-    title: "Booking System for a Cape Town Guesthouse",
+    title: "Booking System for a Guesthouse",
     type: "web-app",
     description: "A custom web app allowing guests to book rooms, manage reservations, and pay online.",
-    image: "https://placehold.co/600x400",
+    image: "/guesthouse.jpg",
     data_ai_hint: "hotel booking",
     techStack: ["React", "Node.js", "PostgreSQL", "Shadcn UI"],
   },
   {
-    id: "3",
-    title: "Corporate Website for a JHB Law Firm",
+    id: "f22f8ec0-9061-41fa-a989-911d71c38c4f",
+    title: "Corporate Website for a Law Firm",
     type: "web-design",
-    description: "A professional and elegant website to represent a leading Johannesburg law firm online.",
-    image: "https://placehold.co/600x400",
+    description: "A professional and elegant website to represent a leading law firm online.",
+    image: "/law.jpg",
     data_ai_hint: "corporate website",
     techStack: ["Next.js", "Framer Motion", "Contentful"],
   },
-    {
-    id: "7",
+  {
+    id: "7e87cd3a-06da-44b8-9d88-1b67a59c2e8a",
     title: "Smart Farm Monitoring System",
     type: "student-project",
     description: "An IoT-based system using ESP32 sensors to monitor soil moisture and temperature, with data visualized on a web dashboard.",
-    image: "https://placehold.co/600x400",
+    image: "/smartfarm.jpg",
     data_ai_hint: "iot farming",
     techStack: ["ESP32", "Arduino", "React", "Firebase"],
   },
   {
-    id: "4",
-    title: "Portfolio Site for a Final-Year Student",
+    id: "e3c8f9f1-b24d-46a9-aeec-3fbe2e9c8b99",
+    title: "Smart Home Energy Monitoring System",
     type: "student-project",
-    description: "A dynamic portfolio website to showcase a student's projects and skills, helping them land their first job.",
-    image: "https://placehold.co/600x400",
-    data_ai_hint: "developer portfolio",
-    techStack: ["React", "TypeScript", "GSAP"],
-  },
-  {
-    id: "5",
-    title: "Local Restaurant Website with SEO",
-    type: "web-design",
-    description: "A visually appealing website for a Durban-based restaurant, optimized for local search to attract diners.",
-    image: "https://placehold.co/600x400",
-    data_ai_hint: "restaurant website",
-    techStack: ["WordPress", "Elementor", "Yoast SEO"],
-  },
-  {
-    id: "6",
-    title: "Student Project: AI-Powered Study Planner",
-    type: "student-project",
-    description: "An innovative web app that helps students organize their study schedules using AI.",
-    image: "https://placehold.co/600x400",
-    data_ai_hint: "planner app",
-    techStack: ["Python (Flask)", "React", "OpenAI API"],
-  },
+    description: "A Raspberry Pi-based IoT solution for monitoring household energy usage in real-time, helping users identify high-consumption devices and reduce electricity bills.",
+    image: "/energy.jpg",
+    data_ai_hint: "raspberry pi energy monitor",
+    techStack: ["Raspberry Pi", "Python", "MQTT", "React", "InfluxDB", "Grafana"],
+  }
+
+  // {
+  //   id: "4",
+  //   title: "Portfolio Site for a Final-Year Student",
+  //   type: "student-project",
+  //   description: "A dynamic portfolio website to showcase a student's projects and skills, helping them land their first job.",
+  //   image: "https://placehold.co/600x400",
+  //   data_ai_hint: "developer portfolio",
+  //   techStack: ["React", "TypeScript", "GSAP"],
+  // },
+  // {
+  //   id: "5",
+  //   title: "Local Restaurant Website with SEO",
+  //   type: "web-design",
+  //   description: "A visually appealing website for a Durban-based restaurant, optimized for local search to attract diners.",
+  //   image: "https://placehold.co/600x400",
+  //   data_ai_hint: "restaurant website",
+  //   techStack: ["WordPress", "Elementor", "Yoast SEO"],
+  // },
+  // {
+  //   id: "6",
+  //   title: "Student Project: AI-Powered Study Planner",
+  //   type: "student-project",
+  //   description: "An innovative web app that helps students organize their study schedules using AI.",
+  //   image: "https://placehold.co/600x400",
+  //   data_ai_hint: "planner app",
+  //   techStack: ["Python (Flask)", "React", "OpenAI API"],
+  // },
 ];
 
 export const blogPosts = [
@@ -160,7 +162,7 @@ export const blogPosts = [
     title: '5 Reasons Your SA Small Business Needs a Website in 2024',
     author: 'Admin',
     date: '2024-07-15',
-    image: 'https://placehold.co/800x400',
+    image: '/webistebusiness.jpeg',
     data_ai_hint: "business meeting",
     content: `
 Even in the age of social media, a dedicated website is the most valuable digital asset for any South African small business. Here's why you can't afford to be without one.
@@ -186,7 +188,7 @@ Your website is a powerful tool for generating leads. Through contact forms, new
     title: 'Choosing the Right Tech Stack for Your Final-Year Project',
     author: 'Admin',
     date: '2024-07-10',
-    image: 'https://placehold.co/800x400',
+    image: '/techstack.png',
     data_ai_hint: "code screen",
     content: `
 Your final-year project is your chance to shine. Choosing the right technologies (your "tech stack") is crucial. Here's a quick guide for SA IT students.
@@ -209,5 +211,71 @@ Your final-year project is your chance to shine. Choosing the right technologies
 ### Key Takeaway
 Choose a stack that not only fits your project's requirements but also excites you. Learning a modern, in-demand stack will give you a huge advantage when you start your career in the South African tech industry.
 `
-  }
+  },
+  {
+    slug: 'why-every-beginner-should-learn-git',
+    title: 'Why Every Beginner Programmer Should Learn Git and Version Control',
+    author: 'Admin',
+    date: '2025-04-06',
+    image: '/git.webp',
+    data_ai_hint: 'programmer coding',
+    content:`
+Have you ever worked on a project, made changes, and then realized you broke something? Or maybe you wish you could go back to an earlier version of your code, but you have no idea how? Well, this is where version control, specifically Git, comes to the rescue!
+
+Git is a powerful tool that helps developers track and manage changes to their code over time. Its used by professional developers worldwide, but it’s also a crucial skill for beginners. In this post, I’ll explain why version control is so important, how Git works, and why every new programmer should learn it.
+
+### What is Version Control?
+**Definition:**  
+Version control is a system that helps developers track and manage changes to the codebase over time. It allows you to revisit earlier versions of your code, collaborate with others, and keep your projects organized.
+
+**Why it’s important:**  
+Without version control, it can be difficult to manage changes, especially when working on bigger projects. You may find yourself losing track of what changes you’ve made, or worse, overwriting valuable code. Version control makes sure you can always revert to a stable version if something goes wrong.
+
+### Introducing Git
+**What is Git?**  
+Git is the most widely-used version control system. It was created by Linus Torvalds, the creator of Linux, and is known for being fast, efficient, and scalable. Git allows you to track changes in your code and store these changes in ‘commits’.
+
+**How Git works:**  
+At its core, Git helps you keep track of changes by creating a ‘snapshot’ of your code whenever you commit. This means that every time you make a change and commit it, Git saves that version of your code. You can then compare, review, or go back to that point whenever you need to.
+
+### Why Should Beginners Learn Git?
+**Collaboration:**  
+As a beginner, you might work on solo projects, but eventually, you’ll want to collaborate with others. Git helps you work in teams by allowing multiple developers to work on the same project simultaneously without overwriting each other’s code.
+
+**Keeping Track of Changes:**  
+As you develop your code, you will inevitably make mistakes. With Git, you can track your changes and roll back to a previous version if something goes wrong. This makes it easy to experiment without fear of ruining your project.
+
+**Better Workflow:**  
+Git allows you to organize your code into branches. This means you can work on new features or fixes in isolation (in a separate branch) and then merge them back into the main codebase when they’re ready.
+
+**Industry Standard:**  
+Git is used by developers in almost every industry, from small startups to large corporations. Learning Git early on will give you an edge and help you integrate with development teams more effectively.
+
+**Backup Your Code:**  
+Git makes it easy to back up your code. If you’re working on your local computer and something happens, having your code saved in a Git repository means you can retrieve it from an online repository like GitHub or GitLab.
+
+### How Git Works: Basic Workflow
+- Initialize a repository: git init
+- Track changes: git add <filename>
+- Commit changes: git commit -m 'message'
+- Push changes: git push
+
+**Simple Example:**  
+Let’s say you’re building a simple ‘To-Do List’ application. After working on your code, you make a change to the way tasks are displayed. You would:  
+git add .  
+git commit -m 'Added task display feature' 
+git push  
+
+This allows you to track the feature and collaborate with others.
+
+### Resources for Getting Started with Git:
+- Git Documentation: The official Git documentation is a great place to start.
+- GitHub Learning Lab: GitHub offers a Learning Lab with free courses to help you get started with Git and GitHub.
+- YouTube Tutorials: There are tons of beginner-friendly tutorials on YouTube that will guide you through the Git process.
+
+### Conclusion
+As a beginner programmer, learning Git might seem intimidating at first, but it’s an invaluable skill that will help you throughout your programming journey. Not only will it improve your workflow, but it will also make you a better developer overall. So don’t hesitate — get started with Git today, and see how it can transform your development process!
+    `
+},
+
 ];

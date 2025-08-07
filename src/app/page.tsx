@@ -126,21 +126,29 @@ export default function Home() {
       text: "Smart WebSync Solutions brought the vision to life! The service was professional, affordable, and i delivered a stunning website that has already boosted our sales.",
     },
     {
-      name: "Aisha Patel",
-      role: "BSc IT Student, TUT",
-      avatar: "AP",
-      image: "https://placehold.co/100x100",
-      data_ai_hint: "woman portrait",
-      text: "I was struggling with my final year project until I found Smart WebSync Solutions. The guidance was invaluable. I got a distinction thanks to their help!",
+      name: "John Kutama",
+      role: "Founder, JG Designs",
+      avatar: "TM",
+      image: "https://avatars.githubusercontent.com/u/217587635?v=4",
+      data_ai_hint: "man portrait",
+      text: "Smart WebSync Solutions brought the vision to life! The service was professional, affordable, and i delivered a stunning website that has already boosted our sales.",
     },
-    {
-      name: "David Smith",
-      role: "Owner, Cape Town Cafe",
-      avatar: "DS",
-      image: "https://placehold.co/100x100",
-      data_ai_hint: "man face",
-      text: "The new website is amazing and so easy to manage. Our online bookings have tripled. Highly recommend Smart WebSync Solutions to any small business in SA.",
-    },
+    // {
+    //   name: "Aisha Patel",
+    //   role: "BSc IT Student, TUT",
+    //   avatar: "AP",
+    //   image: "https://placehold.co/100x100",
+    //   data_ai_hint: "woman portrait",
+    //   text: "I was struggling with my final year project until I found Smart WebSync Solutions. The guidance was invaluable. I got a distinction thanks to their help!",
+    // },
+    // {
+    //   name: "David Smith",
+    //   role: "Owner, Cape Town Cafe",
+    //   avatar: "DS",
+    //   image: "https://placehold.co/100x100",
+    //   data_ai_hint: "man face",
+    //   text: "The new website is amazing and so easy to manage. Our online bookings have tripled. Highly recommend Smart WebSync Solutions to any small business in SA.",
+    // },
   ];
 
   const techStack = ["Next.js", "React", "TypeScript", "Node.js", "Firebase", "PostgreSQL", "Tailwind CSS", "Framer Motion", "Shadcn UI"];
@@ -408,13 +416,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight font-headline">Get in Touch</h2>
-            <p className="text-lg text-muted-foreground mt-2">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+            <p className="text-lg text-muted-foreground mt-2">Have a project in mind or just want to say hello? We love to hear from you.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div>
               <h3 className="text-2xl font-bold mb-4 font-headline">Contact Details</h3>
               <p className="text-muted-foreground mb-8">
-                Fill out the form, or use one of the methods below. I'm excited to learn about your ideas and help bring them to life.
+                Fill out the form, or use one of the methods below. We excited to learn about your ideas and help bring them to life.
               </p>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
@@ -423,7 +431,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-foreground">Call or WhatsApp</h3>
-                    <p className="text-muted-foreground">+27 01 234 5678</p>
+                    <p className="text-muted-foreground">+27 76 335 1282</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -432,7 +440,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-foreground">Email Me</h3>
-                    <p className="text-muted-foreground">hello@brightsynctech.co.za</p>
+                    <p className="text-muted-foreground">info@smartwebsync.co.za</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -441,7 +449,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-foreground">Location</h3>
-                    <p className="text-muted-foreground">Johannesburg, South Africa (Remote First)</p>
+                    <p className="text-muted-foreground">Pretoria, South Africa (Remote)</p>
                   </div>
                 </div>
               </div>

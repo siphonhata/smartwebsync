@@ -72,11 +72,11 @@ export default function BlogSection({ showHeading = true, limit }: BlogSectionPr
                         </Card>
                     ))}
                 </div>
-                <div className="text-center mt-12">
+                {/* <div className="text-center mt-12">
                     <Button asChild size="lg">
                         <Link href="/blog">View All Posts</Link>
                     </Button>
-                </div>
+                </div> */}
             </div>
         </section>
     );
