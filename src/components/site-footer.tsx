@@ -41,17 +41,17 @@ export function SiteFooter() {
           <ul className="space-y-3">
             <li className="flex items-center space-x-2">
               <Phone className="h-4 w-4" />
-              <span>+27 01 234 5678</span>
+              <span>+27 76 335 1282</span>
             </li>
             <li className="flex items-center space-x-2">
               <Mail className="h-4 w-4" />
-              <span>hello@brightsynctech.co.za</span>
+              <span>info@smartwebsync.co.za</span>
             </li>
           </ul>
         </div>
         <div>
           <h4 className="font-semibold text-foreground mb-4">Business Hours</h4>
-          <p>Monday - Friday</p>
+          <p>Monday - Saturday</p>
           <p>9:00 AM - 5:00 PM (SAST)</p>
         </div>
       </div>
