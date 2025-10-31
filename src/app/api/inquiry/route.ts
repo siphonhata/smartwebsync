@@ -1,16 +1,8 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
-// Make sure these environment variables are set in your .env.local file
-const transporter = nodemailer.createTransport({
-  host: process.env.EMAIL_SERVER_HOST,
-  port: Number(process.env.EMAIL_SERVER_PORT),
-  secure: false, // true for port 465, false for 587
-  auth: {
-    user: process.env.EMAIL_SERVER_USER,
-    pass: process.env.EMAIL_SERVER_PASS,
-  },
-});
+// Make sure RESEND_API_KEY is set in your .env.local file
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
@@ -27,9 +19,9 @@ export async function POST(req: Request) {
       ${message}
     `;
 
-    await transporter.sendMail({
-      from: `"BrightSync Contact" <${process.env.EMAIL_SERVER_USER}>`,
-      to: process.env.CONTACT_RECIPIENT_EMAIL,
+    await resend.emails.send({
+      from: process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev",
+      to: process.env.CONTACT_RECIPIENT_EMAIL || "",
       subject: `New Inquiry: ${service}`,
       text: emailContent,
     });
