@@ -8,6 +8,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 import { useScrollSpy } from "@/hooks/use-scroll-spy";
 import { useState } from "react";
+import { BUSINESS_INFO } from "@/lib/constants";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -61,7 +62,7 @@ export function SiteHeader() {
         {/* Desktop Actions */}
         <div className="hidden lg:flex items-center space-x-2 flex-shrink-0">
           <Button asChild variant="secondary" size="sm" className="shadow">
-            <a href="https://wa.me/27763351282" target="_blank" rel="noopener noreferrer">
+            <a href={BUSINESS_INFO.phone.whatsapp} target="_blank" rel="noopener noreferrer">
               <Phone className="h-4 w-4 mr-2" />
               WhatsApp Us
             </a>
@@ -106,7 +107,7 @@ export function SiteHeader() {
                 </nav>
                 <div className="mt-auto p-4 border-t space-y-3">
                   <Button asChild className="w-full" variant="secondary">
-                    <a href="https://wa.me/27763351282" target="_blank" rel="noopener noreferrer">
+                    <a href={BUSINESS_INFO.phone.whatsapp} target="_blank" rel="noopener noreferrer">
                       <Phone className="h-4 w-4 mr-2" />
                       WhatsApp Us
                     </a>

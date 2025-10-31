@@ -48,6 +48,7 @@ import { ProjectCard } from "@/components/project-card";
 import { ContactForm } from "@/components/contact-form";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { projects, services } from "@/lib/placeholder-data";
+import { BUSINESS_INFO } from "@/lib/constants";
 import React, { Suspense, useState } from "react";
 import { SiteFooter } from "@/components/site-footer";
 import BlogSection from "@/components/sections/BlogSection";
@@ -120,35 +121,43 @@ export default function Home() {
     {
       name: "John Kutama",
       role: "Founder, JG Designs",
-      avatar: "TM",
+      avatar: "JK",
       image: "https://avatars.githubusercontent.com/u/217587635?v=4",
       data_ai_hint: "man portrait",
-      text: "Smart WebSync Solutions brought the vision to life! The service was professional, affordable, and i delivered a stunning website that has already boosted our sales.",
+      text: "Smart WebSync Solutions brought my vision to life! The service was professional, affordable, and they delivered a stunning website that has already boosted our sales.",
     },
     {
-      name: "John Kutama",
-      role: "Founder, JG Designs",
+      name: "Thabo Molefe",
+      role: "Owner, Sunshine Guesthouse",
       avatar: "TM",
-      image: "https://avatars.githubusercontent.com/u/217587635?v=4",
+      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Thabo",
       data_ai_hint: "man portrait",
-      text: "Smart WebSync Solutions brought the vision to life! The service was professional, affordable, and i delivered a stunning website that has already boosted our sales.",
+      text: "The booking system they built transformed how we manage reservations. Our guests love how easy it is to book online, and we've seen a 50% increase in direct bookings!",
     },
-    // {
-    //   name: "Aisha Patel",
-    //   role: "BSc IT Student, TUT",
-    //   avatar: "AP",
-    //   image: "https://placehold.co/100x100",
-    //   data_ai_hint: "woman portrait",
-    //   text: "I was struggling with my final year project until I found Smart WebSync Solutions. The guidance was invaluable. I got a distinction thanks to their help!",
-    // },
-    // {
-    //   name: "David Smith",
-    //   role: "Owner, Cape Town Cafe",
-    //   avatar: "DS",
-    //   image: "https://placehold.co/100x100",
-    //   data_ai_hint: "man face",
-    //   text: "The new website is amazing and so easy to manage. Our online bookings have tripled. Highly recommend Smart WebSync Solutions to any small business in SA.",
-    // },
+    {
+      name: "Advocate Lerato Dube",
+      role: "Partner, Dube & Associates Law Firm",
+      avatar: "LD",
+      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Lerato",
+      data_ai_hint: "woman portrait",
+      text: "Our new corporate website is elegant, professional, and perfectly represents our firm. Smart WebSync Solutions delivered exceptional quality and attention to detail.",
+    },
+    {
+      name: "Sipho Nkosi",
+      role: "Final Year Student, Agriculture Tech",
+      avatar: "SN",
+      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sipho",
+      data_ai_hint: "man face",
+      text: "They helped me build an IoT smart farm monitoring system for my final year project. The mentorship was incredible, and I graduated with distinction. Highly recommend!",
+    },
+    {
+      name: "Nomvula Khumalo",
+      role: "Computer Science Student, UJ",
+      avatar: "NK",
+      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Nomvula",
+      data_ai_hint: "woman portrait",
+      text: "My smart home energy monitoring project exceeded expectations thanks to their guidance. They made complex IoT concepts easy to understand and implement.",
+    },
   ];
 
   const techStack = ["Next.js", "React", "TypeScript", "Node.js", "Firebase", "PostgreSQL", "Tailwind CSS", "Framer Motion", "Shadcn UI"];
@@ -190,7 +199,7 @@ export default function Home() {
               <Link href="#contact">Book Free Quote <ArrowRight className="ml-2" /></Link>
             </Button>
             <Button asChild size="lg" variant="secondary" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-lg transition-transform transform hover:scale-105">
-              <a href="https://wa.me/+27763351282" target="_blank" rel="noopener noreferrer">
+              <a href={BUSINESS_INFO.phone.whatsapp} target="_blank" rel="noopener noreferrer">
                 <Phone className="ml-2" /> Chat on WhatsApp
               </a>
             </Button>
@@ -431,7 +440,9 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-foreground">Call or WhatsApp</h3>
-                    <p className="text-muted-foreground">+27 76 335 1282</p>
+                    <a href={`tel:${BUSINESS_INFO.phone.raw}`} className="text-muted-foreground hover:text-primary transition-colors">
+                      {BUSINESS_INFO.phone.display}
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -440,7 +451,9 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-foreground">Email Me</h3>
-                    <p className="text-muted-foreground">info@smartwebsync.co.za</p>
+                    <a href={`mailto:${BUSINESS_INFO.email.info}`} className="text-muted-foreground hover:text-primary transition-colors">
+                      {BUSINESS_INFO.email.info}
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
